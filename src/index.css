@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+}
+
+/* Block all printing: render a blank page */
+@media print {
+  html, body, #root, main {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}

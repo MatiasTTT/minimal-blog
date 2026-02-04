@@ -18,10 +18,14 @@
             alt="Blogiin liittyvä kuva [kuva on tuotettu tekoälyllä]"
             loading="lazy"
           />
-          <figcaption className="caption">Blogin viitekuva on luotu käyttäen tekoälyä</figcaption>
+          <figcaption className="caption">Blogin viitekuva on luotu käyttäen tekoälyä (Malli: Google Nano Banana Pro).</figcaption>
         </figure>
 
-        {/* --- SISÄLTÖ ALKAA --- */}
+        {/* 1) Johdanto */}
+        <h2 className="reveal" style={{ "--delay": "170ms" }}>
+          Kaikki tekoäly ei ole samaa tekoälyä
+        </h2>
+
         <section className="section reveal" style={{ "--delay": "180ms" }}>
           <p>
             Jos olet viime kuukausina kuullut sanan{" "}
@@ -43,7 +47,7 @@
 
           <p>
             Tässä kohtaa moni tekee huomaamattaan pienen oikaisun: kaikkea
-            “älykästä” kutsutaan tekoälyksi. Todellisuudessa iso osa arjen
+            "älykästä" kutsutaan tekoälyksi. Todellisuudessa iso osa arjen
             tekoälysovelluksista on tarkemmin sanottuna{" "}
             <em>
               <a
@@ -59,8 +63,9 @@
           </p>
         </section>
 
+        {/* 2) Tekoälyn määrittely */}
         <h2 className="reveal" style={{ "--delay": "230ms" }}>
-          “Tekoäly” on kattotermi – kielimalli vain yksi osa sitä
+          Tekoäly on kattotermi, ei yksittäinen sovellus
         </h2>
 
         <section className="section reveal" style={{ "--delay": "280ms" }}>
@@ -74,16 +79,9 @@
                 Helsingin yliopisto
               </a>
             </em>{" "}
-            esittää tekoälyn ennen kaikkea laajana kattokäsitteenä. Tekoäly ei ole
+            esittää tekoälyn perusteita käsittelevällä netti kurssiilaan tekoälyn ennen kaikkea laajana kattokäsitteenä. Tekoäly ei ole
             yksi yksittäinen ohjelma tai sovellus, vaan kokonainen tieteenala,
             jonka alle kuuluu joukko erilaisia menetelmiä ja lähestymistapoja.
-          </p>
-
-          <p>
-            Tämän kokonaisuuden sisällä puhutaan esimerkiksi koneoppimisesta ja sen
-            osa-alueesta syväoppimisesta. Juuri syväoppimiseen perustuvat
-            järjestelmät ovat se tekninen perusta, johon monet nykyiset
-            “tekoälytyökalut” nojaavat.
           </p>
 
           <p>
@@ -94,18 +92,73 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Sun ja kumppanit
+                Sunin ja kumppaneiden
               </a>
             </em>{" "}
-            määrittelivät tekoälyjärjestelmät ihmisen rakentamiksi järjestelmiksi,
-            jotka käsittelevät dataa ja hyödyntävät laskennallisia malleja
-            tuottaakseen ratkaisuja asetettuihin tavoitteisiin. Tämä määritelmä
-            auttaa hahmottamaan, miksi tekoäly ei ole yksi asia – vaan kokonainen
-            työkalupakki.
+            akateeminen tutkijaryhmä kuvasivat tekoälyjärjestelmät tieteellisessä artikkelissaan ihmisen rakentamiksi järjestelmiksi, jotka
+            käsittelevät sekä jäsenneltyä että jäsentymätöntä dataa ja hyödyntävät
+            laskennallisia malleja tuottaakseen tietoa ja ratkaisuja kohti asetettuja
+            tavoitteita. Tämä auttaa hahmottamaan, miksi tekoäly ei ole yksi "juttu"
+            vaan kokonainen työkalupakki.
           </p>
+        </section>
 
+        {/* 3) Koneoppiminen ja syväoppiminen */}
+        <h2 className="reveal" style={{ "--delay": "330ms" }}>
+          Koneoppimisesta syväoppimiseen
+        </h2>
+
+        <section className="section reveal" style={{ "--delay": "380ms" }}>
           <p>
-            Kun katse käännetään kielimalleihin,{" "}
+            Tekoälyn sateenvarjon alla on monia osa-alueita. Aiemmin mainitun Helsinging yliopisto julkaisema{" "}
+            <em>
+              <a
+                href="https://course.elementsofai.com/fi/1/2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Elements of AI
+              </a>
+            </em>{" "}
+            kurssi nostaa esiin esimerkiksi koneoppimisen ja sen osa-alueen syväoppimisen.
+            Juuri syväoppimiseen perustuvat mallit ovat se tekninen perusta, johon
+            monet nykyiset "tekoälytyökalut" nojaavat.
+          </p>
+        </section>
+
+        {/* 4) Suuret kielimallit */}
+        <h2 className="reveal" style={{ "--delay": "430ms" }}>
+          Suuret kielimallit: tekoälyn näkyvin osa
+        </h2>
+
+        <section className="section reveal" style={{ "--delay": "480ms" }}>
+          <p>
+            Kun katse käännetään arjen tekoälyyn, vastaan tulee usein sama ilmiö:
+            työkalu on erityisen hyvä kirjoittamaan, tiivistämään ja keskustelemaan.
+            Se viittaa siihen, että taustalla on todennäköisesti kielimalli.
+            Esimerkiksi{" "}
+            <em>
+              <a
+                href="https://doi.org/10.7150/ijms.111780"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Yun ja kumppaneiden
+              </a>
+            </em>{" "}
+            International Journal of Medical Sciences -tieteellisessä julkaisussa vuonna 2025 esitetty tutkimus kuvaavat suuria kielimalleja luonnollisen kielen käsittelyyn
+            erikoistuneina järjestelminä, joita voidaan soveltaa monenlaisiin
+            kielellisiin tehtäviin.
+          </p>
+        </section>
+
+        {/* 5) Kapea tekoäly */}
+        <h2 className="reveal" style={{ "--delay": "530ms" }}>
+          Kapeaa tekoälyä, ei yleisälyä
+        </h2>
+
+        <section className="section reveal" style={{ "--delay": "580ms" }}>
+          <p>
             <em>
               <a
                 href="https://doi.org/10.21801/ppcrj.2023.91.1"
@@ -115,22 +168,37 @@
                 Almarien ja kumppaneiden
               </a>
             </em>{" "}
-            vuonna 2023 julkaisema artikkeli kuvaa suuret kielimallit tekoälyn
+            tutkimusryhmän vuonna 2023 julkaisema artikkeli kuvaa suuret kielimallit tekoälyn
             muotona, joka on koulutettu valtavilla tekstiaineistoilla tuottamaan
-            luonnollista kieltä muistuttavaa tekstiä. He painottavat erityisesti
-            sitä, että kyse on kapeasta tekoälystä – ei yleisälystä, joka
-            “ymmärtäisi” maailmaa ihmisen tavoin.
+            luonnollista kieltä muistuttavaa tekstiä. Samalla he painottavat, että
+            kyse on kapeasta tekoälystä – ei yleisälystä, joka olisi "kaikkivoipa".
           </p>
 
           <p>
-            Sama rajaus näkyy myös Elements of AI -materiaaleissa: tämän päivän
-            tekoälyjärjestelmät sijoittuvat kaikki kapean tekoälyn piiriin. Ne ovat
-            hyviä juuri siinä tehtävässä, johon ne on suunniteltu – mutta eivät
-            sen enempää.
+            Sama ajatus näkyy myös{" "}
+            <em>
+              <a
+                href="https://course.elementsofai.com/fi/1/3"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Elements of AI -materiaalissa
+              </a>
+            </em>
+            : tämän päivän tekoälyjärjestelmät sijoittuvat kapean tekoälyn piiriin.
+            Ne ovat hyviä tietyssä tehtävässä (kieli!), mutta eivät "ymmärrä"
+            maailmaa ihmisen tavoin.
           </p>
+        </section>
 
+        {/* 6) Eri näkökulmia */}
+        <h2 className="reveal" style={{ "--delay": "630ms" }}>
+          Ymmärrystä vai tilastoa? Kaksi tapaa katsoa kielimalleja
+        </h2>
+
+        <section className="section reveal" style={{ "--delay": "680ms" }}>
           <p>
-            Kielimalleja voi kuitenkin tarkastella myös toisesta kulmasta.{" "}
+            Lähteissä näkyy myös kiinnostava painotusero.{" "}
             <em>
               <a
                 href="https://doi.org/10.3390/app15148103"
@@ -140,14 +208,15 @@
                 Peykani ja kumppanit
               </a>
             </em>{" "}
-            korostavat vuonna 2025 julkaistussa katsauksessaan mallien
-            tilastollista luonnetta: kielimallit ennustavat todennäköisiä sanajonoja
-            valtavien tekstimäärien perusteella, eivätkä varsinaisesti “ymmärrä”
-            sisältöä samalla tavalla kuin ihminen.
+            korostavat akateemisessä julkaisussaan mallien tilastollista luonnetta: kielimalli ennustaa
+            todennäköisiä sanajonoja suurista tekstimassoista opittujen
+            säännönmukaisuuksien perusteella. Tästä näkökulmasta voi olla tärkeää
+            muistaa, että "hyvä teksti" ei automaattisesti tarkoita "todellista
+            ymmärrystä".
           </p>
 
           <p>
-            Toisaalta{" "}
+            Vuonna 2025{" "}
             <em>
               <a
                 href="https://doi.org/10.7150/ijms.111780"
@@ -157,22 +226,29 @@
                 Yu ja kumppanit
               </a>
             </em>{" "}
-            tarkastelevat kielimalleja ennen kaikkea niiden suorituskyvyn ja
-            sovellettavuuden kautta. Heidän mukaansa mallien valtava
-            parametrimäärä ja massiivinen koulutusdata selittävät, miksi sama
-            kielimalli pystyy hoitamaan monenlaisia kielellisiä tehtäviä.
-          </p>
-
-          <p>
-            Kun nämä näkökulmat yhdistää, syntyy aika selkeä kuva: suuri osa
-            arkisesta “tekoälystä” on oikeasti kielimalleja. Ne ovat tehokkaita,
-            vaikuttavia ja hyödyllisiä – mutta eivät koko tekoälyn kenttä. Näin voidaankin lopettaa
-            sanoen että sanoilla on väliä.
-            <br></br>
-            <br></br>
+            taas katsovat kielimalleja vahvasti sovellettavuuden ja suorituskyvyn
+            kautta ja kuvaavat niitä järjestelmiksi, joissa on suuri määrä
+            parametreja ja jotka on koulutettu massiivisilla tekstiaineistoilla –
+            mikä selittää niiden laajan käytettävyyden erilaisissa kielellisissä
+            tehtävissä.
           </p>
         </section>
-        {/* --- SISÄLTÖ PÄÄTTYY --- */}
+
+        {/* 7) Yhteenveto */}
+        <h2 className="reveal" style={{ "--delay": "730ms" }}>
+          Miksi sanoilla on väliä
+        </h2>
+
+        <section className="section reveal" style={{ "--delay": "780ms" }}>
+          <p>
+            Kun tämän kaiken tiivistää, syntyy aika selkeä kuva: iso osa arjen
+            "tekoälypuheesta" osuu oikeasti kielimalleihin. Suuret kielimallit ovat
+            tärkeä ja näkyvä osa tekoälyä, mutta ne eivät ole koko tekoälyn kenttä.
+            Ja ehkä juuri siksi käsitteillä on merkitystä: kun erottaa "tekoälyn" ja
+            "kielimallin", ymmärtää samalla paremmin myös sen, mihin nämä työkalut
+            sopivat — ja missä niiden rajat tulevat vastaan.
+          </p>
+        </section>
 
         <hr className="reveal" style={{ "--delay": "980ms" }} />
 
